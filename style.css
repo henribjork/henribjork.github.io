@@ -21,6 +21,14 @@ header h1 {
     font-size: 3.5rem;
     letter-spacing: 6px;
 }
+header p a {
+    color: white;
+    text-decoration: none;
+}
+header p a:hover {
+    color: red;
+    text-decoration: none;
+}
 .profile {
     display: flex;
     justify-content: center;
@@ -28,7 +36,7 @@ header h1 {
 }
 .profile img {
     border-radius: 100%;
-    border: 0.3px solid white;
+    border: 1px solid white;
 }
 a.fa {
     padding: 10px;
@@ -46,5 +54,5 @@ a.fa-spotify:hover {
     color: green;
 }
 a.fa-github:hover {
-    color: black;
+    filter: black; 
 }
