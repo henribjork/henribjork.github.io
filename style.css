@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans Condensed', sans-serif;
 }
 body {
     background-image: url(Mountains.jpg);
@@ -11,11 +10,11 @@ body {
     background-attachment: fixed;
 }
 header {
+    font-family: 'Open Sans Condensed', sans-serif;
     text-align: center;
     color: white;
     width: 100%;
     margin: 0 auto;
-    margin-top: 40px;
     padding: 30px;
 }
 header h1 {
@@ -29,16 +28,15 @@ header h1 {
 }
 .profile img {
     border-radius: 100%;
-    border: 1px solid white;
+    border: 0.3px solid white;
+    width: 500px;
+    height: 500px;
 }
-.social {
-    display: flex;
-    justify-content: center;
-}  
 a.fa {
     padding: 10px;
     text-decoration: none;
     color: white;
+    text-align: center;
 }
 a.fa-facebook:hover {
     color:blue;
