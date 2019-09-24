@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+body {
+    background-image: url(Mountains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header {
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 30px;
+}
+header h1 {
+    font-size: 3.5rem;
+    letter-spacing: 6px;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile img {
+    border-radius: 100%;
+    border: 1px solid white;
+}
+.social {
+    display: flex;
+    justify-content: center;
+}  
+a.fa {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+a.fa-facebook:hover {
+    color:blue;
+}
+a.fa-instagram:hover {
+    color:purple;
+}
+a.fa-spotify:hover {
+    color: green;
+}
+a.fa-github:hover {
+    color: black;
+}
