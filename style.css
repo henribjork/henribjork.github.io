@@ -24,20 +24,24 @@ menu {
 menu nav a {
     margin-right: 10px;
 }
+
+/* Social media icons styling */
+
 a.fa {
     font-size: 1.2rem;
     text-decoration: none;
     color: black;
 }
 a.fa-facebook:hover {
-    color: blue;
+    color: #3B5998;
 }
 a.fa-instagram:hover {
-    color: purple;
+    color: #E1306C;
 }
 a.fa-github:hover {
     color: grey;
 }
+
 /* ------------ */
 
 main {
