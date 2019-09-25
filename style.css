@@ -76,11 +76,12 @@ main {
     color: white;
     text-decoration: none;
     letter-spacing: 2px;
+    border-bottom: 1px solid white;
 }
 .desc a:hover {
-    border-bottom: 1px solid #F52B3B;
-    color: #F52B3B;
-    text-shadow: 1px 1px white;
+    color: #001A52;
+    border-bottom: 1px solid #001A52;
+    text-shadow: 1px 1px #001A52;
 }
 .desc span {
     display: flex;
