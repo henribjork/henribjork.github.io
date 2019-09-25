@@ -3,56 +3,119 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-image: url(Mountains.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-header {
-    font-family: 'Open Sans Condensed', sans-serif;
-    text-align: center;
-    color: white;
-    width: 100%;
+
+.wrapper {
+    width: 800px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 10px;
+    margin-top: 10%;
 }
-header h1 {
-    font-size: 3.5rem;
-    letter-spacing: 6px;
-}
-header p a {
-    color: white;
-    text-decoration: none;
-}
-header p a:hover {
-    color: red;
-    text-decoration: none;
-}
-.profile {
+
+menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    height: 50px;
+    margin: 0 auto;
+    border-bottom: 1px solid lightgrey;
+    font-family: 'Open Sans Condensed', serif;
+    letter-spacing: 2px;
 }
-.profile img {
-    border-radius: 100%;
-    border: 1px solid white;
+menu nav a {
+    margin-right: 10px;
 }
 a.fa {
-    padding: 10px;
+    font-size: 1.2rem;
     text-decoration: none;
-    color: white;
-    text-align: center;
+    color: black;
 }
 a.fa-facebook:hover {
-    color:blue;
+    color: blue;
 }
 a.fa-instagram:hover {
-    color:purple;
-}
-a.fa-spotify:hover {
-    color: green;
+    color: purple;
 }
 a.fa-github:hover {
-    filter: black; 
+    color: grey;
+}
+/* ------------ */
+
+main {
+    display: flex;
+    justify-content: flex-end;
+    background-color:#F52B3B;
+    padding: 10px;
+    margin: 10px;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding: 15px;
+}
+.profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+.desc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+.desc h3, p {
+    margin-left: 20px;
+}
+.desc a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.desc a:hover {
+    border-bottom: 1px solid #F52B3B;
+    color: #F52B3B;
+    text-shadow: 1px 1px white;
+}
+.desc span {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+.borderBottom {
+    border-top: 1px solid lightgrey;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        background-color: seagreen;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+     }
+    .wrapper {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 300px) {
+    main {
+        background-color: hotpink;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     }
+    .wrapper {
+        width: 90%;
+    }
+    menu {
+        justify-content: center;
+        flex-direction: column;
+        height: 80px;
+    }
 }
